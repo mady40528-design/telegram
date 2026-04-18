@@ -680,6 +680,7 @@ async function handleHelp(bot, msg) {
 • استخدم /check لتشغيل فحص يدوي في أي وقت
 
 <b>🔹 المواقع المدعومة:</b>
+• Amazon.eg EG
 • Amazon.in 🇮🇳
 • Amazon.com 🇺🇸
 
