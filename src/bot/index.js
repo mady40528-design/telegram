@@ -175,7 +175,7 @@ function registerCommands() {
             case 'TRACK':
                 await bot.sendMessage(chatId,
                     '👇 <b>أرسل لي رابط منتج أمازون:</b>\n\n' +
-                    '<code>https://amazon.in/dp/...</code>\n\n' +
+                    '<code>https://amazon.eg/dp/...</code>\n\n' +
                     'أو استخدم الأمر: <code>/track &lt;رابط&gt;</code>',
                     {
                         parse_mode: 'HTML',
@@ -189,7 +189,7 @@ function registerCommands() {
                 break;
 
             case 'DASHBOARD':
-                const dashboardUrl = process.env.DASHBOARD_URL || 'https://trackit1918.netlify.app';
+                const dashboardUrl = process.env.DASHBOARD_URL || 'https://trackismartbot.netlify.app';
                 const magicLink = `${dashboardUrl}/?user_id=${query.from.id}`;
                 const isLocal = dashboardUrl.includes('localhost') || dashboardUrl.includes('127.0.0.1');
 
