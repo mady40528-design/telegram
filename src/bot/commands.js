@@ -114,7 +114,7 @@ async function handleTrack(bot, msg, match) {
             await bot.sendMessage(chatId,
                 '⚠️ يرجى إدخال رابط أمازون.\n\n' +
                 '<b>الاستخدام:</b> <code>/track &lt;رابط-أمازون&gt;</code>\n\n' +
-                '<b>مثال:</b>\n<code>/track https://amazon.in/dp/B08N5WRWNW</code>',
+                '<b>مثال:</b>\n<code>/track https://amazon.eg/dp/B08N5WRWNW</code>',
                 { parse_mode: 'HTML' }
             );
             return;
@@ -125,7 +125,7 @@ async function handleTrack(bot, msg, match) {
         if (!validation.isValid) {
             await bot.sendMessage(chatId,
                 `⚠️ ${validation.error}\n\n` +
-                'يرجى إدخال رابط منتج صحيح من Amazon.in أو Amazon.com.',
+                'يرجى إدخال رابط منتج صحيح من Amazon.eg أو Amazon.com.',
                 { parse_mode: 'HTML' }
             );
             return;
