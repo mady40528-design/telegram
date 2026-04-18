@@ -109,7 +109,7 @@ function registerCommands() {
         if (!text || text.startsWith('/')) return;
 
         // Check for Amazon URLs
-        if (text.includes('amazon.in') || text.includes('amazon.com') || text.includes('amzn.in') || text.includes('amzn.to')) {
+        if (text.includes('amazon.in')|| text.includes('amzn.eu')|| text.includes('amazon.eg') || text.includes('amazon.com') || text.includes('amzn.in') || text.includes('amzn.to')) {
             console.log(`🔗 تم اكتشاف رابط مباشر من ${msg.from.username || msg.from.id}`);
             await commands.handleTrack(bot, msg, [text, text]);
         }
